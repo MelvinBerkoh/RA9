@@ -29,14 +29,23 @@ public:
   Ship(string name, int year, shipType type) : name(name), year(year), type(type) {}
 
   // setter methods
-  string setShName();
-  int setShYear();
-  enum shipType setShType();
+  void setShName(string givenName)
+  {
+    name = givenName;
+  }
+  void setShYear(int givenYear)
+  {
+    year = givenYear;
+  }
+  void setShType(shipType givenType)
+  {
+    type = givenType;
+  }
 
   // getter methods
   std::string getShName() { return name; }
   int getShYear() { return year; }
-  enum shipType getShType() { return type; }
+  shipType getShType() { return type; }
 
   // abstract member function
   virtual void print() = 0;
