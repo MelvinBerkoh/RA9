@@ -1,0 +1,11 @@
+To make a class abstract in cpp
+Declare function with initializer of 0
+```
+class A
+{
+public:
+    virtual void draw() = 0;
+};
+```
+
+ship type is a gobal variable 
